@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      border: 10px solid lightgray;
+      display: grid;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: fit-content(300px) fit-content(300px);
+    }
+    .item {
+      border: 10px solid red;
+    }
+  </style>
+</head>
+<body>
+  <!-- fit-content-->
+  <div class="container">
+    <div class="item">Hello HEROPY</div>
+    <div class="item">minmax() 함수는 행/열(Track)의 ‘최소/최대 크기’를 정의합니다.
+      첫 번째 인수는 ‘최솟값’이고 두 번째 인수는 ‘최댓값’입니다.
+      grid-template-rows, grid-template-columns, grid-auto-rows 그리고 grid-auto-columns에서 사용합니다.
+      일반 요소에 min-width와 max-width 속성을 동시 지정하는 것과 유사합니다.</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+</body>
+</html>

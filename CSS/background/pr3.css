@@ -1,0 +1,10 @@
+.box {
+  width: 400px;
+  height: 300px;
+  border: 2px solid red;
+  margin: 50px;
+  background-image: url("https://heropy.blog/css/images/logo.png");
+  background-repeat: no-repeat;
+  /* background-size: cover;*/ /* 요소의 넓은 너비에 맞춰짐 */
+  background-size: contain; /* 요소의 짧은 너비에 맞춰짐 */
+}

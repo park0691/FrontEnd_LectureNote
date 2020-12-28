@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    img {
+      width: 300px;
+      border: 1px solid lightgray;
+      transition: 1s;
+      transform: perspective(400px) rotateY(180deg); /* 90도부터 뒷면 나타나므로 안보여 */
+      backface-visibility: hidden; /* 뒷면 숨김 */
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <!-- perspective 실습 -->
+  <div class="perspective">
+    <div class="grand-parent">
+      <div class="parent">
+        <img src="https://heropy.blog/css/images/logo.png" alt="HEROPY">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

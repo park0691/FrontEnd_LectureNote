@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .perspective {
+      width: 300px;
+      perspective: 600px;
+      perspective-origin: 100% 100%; /* 원근 거리 변경 */
+      padding: 70px;
+    }
+    .grand-parent {
+      width: 300px;
+      border: 3px solid dodgerblue;
+      transition: 1s;
+      transform: rotateX(-45deg);
+      transform-style: preserve-3d; /* 자식 요소에서도 3차원 효과 사용 */
+    }
+    .parent {
+      width: 300px;
+      border: 3px solid tomato;
+      transition: 1s;
+      transform: rotateY(45deg);
+      transform-style: preserve-3d;
+    }
+    img {
+      width: 300px;
+      border: 3px solid lightgray;
+      transition: 1s;
+      transform: rotateX(45deg);
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <!-- perspective 실습 -->
+  <div class="perspective">
+    <div class="grand-parent">
+      <div class="parent">
+        <img src="https://heropy.blog/css/images/logo.png" alt="HEROPY">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

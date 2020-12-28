@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      border: 4px solid;
+      display: flex;
+    }
+    .container .item {
+      height: 100px;
+      background: tomato;
+      border: 4px dashed red;
+      border-radius: 10px;
+      flex-grow: 1;
+      /* flex-basis: 100px; */
+      flex-basis: 0;  /* 전체 너비를 동일하게 가져가 */
+    }
+    .container .item3 {
+      flex-grow: 2;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <!-- flex-shrink -->
+  <!-- 
+    아이템 width 제거
+    각 아이템이 가지고 있는 텍스트를 제외한 나머지 빈 공간의
+    여백들로 비율에 맞게 1:1:1로 설정한다.
+  -->
+  <div class="container">
+    <div class="item item1">Good job!</div>
+    <div class="item item2">A</div>
+    <div class="item item3">Hello World~~</div>
+  </div>
+</body>
+</html>

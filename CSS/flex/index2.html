@@ -1,0 +1,59 @@
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: wrap; */
+      justify-content: space-around;
+      /* align-items: center; */
+      /* align-content: flex-start; */
+      height: 100vh;
+      background: lightgray;
+    }
+    .item {
+      /* flex-basis: 0; */
+      background: rgba(255, 0, 0, 0.5);
+    }
+    .item:nth-child(1) {
+      /*flex-grow: 1;   여백을 일정 비율로 나눠쓰겠다 */
+      flex: 1;
+      align-self: flex-start;
+    }
+    .item:nth-child(2) {
+      /* flex-grow: 2; */
+      flex: 2;
+    }
+    .item:nth-child(3) {
+      /* flex-grow: 1; */
+      flex: 1;
+      order: -1;
+    }
+    .item:nth-child(odd) {
+      background: rgba(255, 255, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      <img width="100px" src="https://heropy.blog/css/images/logo.png"/>
+      <p>AAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAA</p>
+    </div>
+    <div class="item">
+      <img width="100px" src="https://heropy.blog/css/images/logo.png"/>
+      <p>BBBBBBBBBBBBBBBBBBBBBB</p>
+    </div>
+    <div class="item">
+      <img width="100px" src="https://heropy.blog/css/images/logo.png"/>
+      <p>CCCCCCC</p>
+    </div>
+  </div>
+</body>
+</html>

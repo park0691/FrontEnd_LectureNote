@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .box {
+      width: 150px;
+      height: 100px;
+      border-radius: 10px;
+      margin: 10px;
+      color: white;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box1 { background: tomato; }
+    .box2 { background: dodgerblue; }
+    .box3 { background: yellowgreen; }
+    .box1:hover {
+      animation: size-up 1s 2 alternate;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+    }
+    .box2:hover {
+      animation: size-up 1s 2 alternate 1s linear; /* duration이 delay 앞에 */
+    }
+    .box3:hover {
+      animation: size-up 1s -1s linear 2 alternate;
+    }
+    @keyframes size-up {
+      0% {
+        width: 150px;
+      }
+      100% {
+        width: 500px;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="box box1">0s</div>
+  <div class="box box2">1s</div>
+  <div class="box box3">-1s</div>
+</body>
+</html>
